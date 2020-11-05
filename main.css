@@ -2,11 +2,15 @@
 /*font-family: 'Lora', serif;*/
 /*font-family: 'Montserrat', sans-serif;*/
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     display: grid;
-    background: black;
+    background: #181719;
     color: white;
-    grid-template-rows: 6rem 30rem 4rem;
+    grid-template-rows: 6rem 30rem 1fr;
     grid-auto-columns: 1fr 1fr 1fr;
 }
 
@@ -46,12 +50,61 @@ body{
 }
 .portfolio {
     width: 65%;
-
+    position: relative;
 }
-
 .portfolio__image{
     width: 100%;
     background: url("images/kitchen-living-room-4043091_1920.jpg");
-    height: 100%;
+    height: 80%;
+    top: 0;
     background-size: cover;
+    position: absolute;
+    z-index: 0;
 }
+.portfolio__author{
+    background-color: #181719;
+    z-index: 10;
+    position: absolute;
+    width: 40%;
+    bottom: 0;
+    right: 10%;
+    display: inline-block;
+    padding: 1rem;
+
+}
+
+.portfolio__author__information{
+    display: inline-block;
+    position: absolute;
+    top:15%;
+    padding: 0 1rem;
+
+}
+
+.portfolio__image-creation-date{
+    font-family: 'Lora', serif;
+    font-weight: 700;
+}
+.portfolio__author__selfie{
+    background: url("images/beautiful-1274056_1920.jpg");
+    background-size: cover;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 1rem;
+}
+.portfolio__author__information-name{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+
+}
+.portfolio__author__information-company-name{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    margin: 0;
+    color: #828282;
+}
+
