@@ -1,4 +1,57 @@
+/*font-family: 'Crimson Pro', serif;*/
+/*font-family: 'Lora', serif;*/
+/*font-family: 'Montserrat', sans-serif;*/
+
 body{
+    display: grid;
     background: black;
     color: white;
+    grid-template-rows: 6rem 30rem 4rem;
+    grid-auto-columns: 1fr 1fr 1fr;
+}
+
+.navigation{
+}
+.footer{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.main{
+    display: flex;
+    margin: 0 3rem;
+}
+
+.company{
+    width: 35%;
+    padding: 1rem;
+}
+.company__name{
+    font-family: 'Lora', serif;
+    font-size: 3rem;
+    font-weight: 400;
+}
+.company__description{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.company__read-more{
+    display: flex;
+}
+.company__read-more-text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+.portfolio {
+    width: 65%;
+
+}
+
+.portfolio__image{
+    width: 100%;
+    background: url("images/kitchen-living-room-4043091_1920.jpg");
+    height: 100%;
+    background-size: cover;
 }
