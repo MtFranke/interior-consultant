@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@400;500;600;700&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <nav class="navigation">
         <a href="#" class="navigation__logo">THIS INTERIOR</a>
@@ -25,12 +26,12 @@
                 <a href="#" class="navigation__item-link">Contact</a>
             </li>
         </ul>
-        <a class="navigation__hamburger">
+        <a class="navigation__hamburger" id="hamburger">
             <img src="icons/menu.png" alt="menu">
         </a>
     </nav>
     <div class="navigation__dropdown">
-        <a class="navigation__dropdown__close">
+        <a class="navigation__dropdown__close" id="close">
             <img src="icons/close.png" alt="close">
         </a>
         <div class="navigation__dropdown-content">
@@ -65,5 +66,13 @@
     <footer class="footer">
         Mateusz Franke @ DevChallenges.io
     </footer>
+    <script>
+        document.getElementById("hamburger").addEventListener("click", function() {
+            document.getElementsByClassName("navigation__dropdown")[0].style.display = "block";
+        });
+        document.getElementById("close").addEventListener("click", function() {
+            document.getElementsByClassName("navigation__dropdown")[0].style.display = "none";
+        });
+    </script>
 </body>
 </html>
