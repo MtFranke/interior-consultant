@@ -156,3 +156,37 @@ body{
     align-self: end;
     margin: 0 0 3rem 0;
 }
+
+@media screen and (max-width: 900px) {
+    body{
+        grid-template-rows:  1fr 7fr 1fr;
+    }
+    .main{
+        display: block;
+        margin: 0 3rem;
+    }
+    .company{
+        width: 100%;
+    }
+    .portfolio{
+        width: 100%;
+        height: 80%;
+    }
+    .portfolio__author{
+        width: 80%;
+    }
+    .footer{
+        margin: 0 0 2rem 0;
+    }
+    .footer::before{
+        content: ' ';
+        background-color: #A9A9A9;
+        height: 3px;
+        width: 60%;
+        position: absolute;
+        bottom: 5%;
+        left: 20%;
+
+    }
+
+}
