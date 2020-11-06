@@ -150,6 +150,8 @@ body{
 .portfolio__image-creation-date{
     font-family: 'Lora', serif;
     font-weight: 700;
+    margin: 0;
+    padding: 0.5rem;
 }
 .footer{
     font-family: 'Montserrat', sans-serif;
@@ -195,6 +197,8 @@ body{
         right: 0;
         top: 0;
         padding: 1rem;
+        cursor: pointer;
+
     }
     .navigation__dropdown-content-link{
         text-decoration: none;
@@ -216,6 +220,7 @@ body{
     }
     .navigation__hamburger{
         display: block;
+        cursor: pointer;
     }
     .footer{
         margin: 0 0 2rem 0;
@@ -232,6 +237,11 @@ body{
     }
     .portfolio__image{
 
+    }
+    .portfolio__image-creation-date{
+        font-family: 'Lora', serif;
+        font-weight: 500;
+        font-size: 1.2rem;
     }
     .company__name{
         font-size: 2rem;
