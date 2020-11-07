@@ -240,7 +240,11 @@ body{
 
     }
     .portfolio__image{
-
+        height: 50%;
+    }
+    .portfolio__author{
+        top:35%;
+        bottom:unset;
     }
     .portfolio__image-creation-date{
         font-family: 'Lora', serif;
@@ -258,4 +262,5 @@ body{
         font-size: 1rem;
         margin: 0 0 1rem 0;
     }
+
 }
